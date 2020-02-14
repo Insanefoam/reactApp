@@ -1,18 +1,14 @@
-h1{
-    color: red;
+header{
+    color: blue;
     font-size: 50px;
 }
 
-p{
-    color: royalblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+main{
+    color: cadetblue;
+    font-size: 35px;
 }
 
-ol{
-    font-size: 25px;
-}
-
-ol:nth-child(n + 1){
-    color: brown;
+footer{
+    color: red;
+    font-size: 50px;
 }
