@@ -3,7 +3,13 @@ import React from "react";
 function MainContent(){
     return(
         <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <span>Todo list:</span>
+            <ol>
+                <li>First todo <input type="checkbox"/></li>
+                <li>Second todo <input type="checkbox"/></li>
+                <li>Third todo <input type="checkbox"/></li>
+                <li>Fourth todo <input type="checkbox"/></li>
+            </ol>
         </main>
     )
 }

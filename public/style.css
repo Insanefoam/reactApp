@@ -1,14 +1,27 @@
-header{
-    color: blue;
-    font-size: 50px;
+*{
+  font-family: 'Courier New', Courier, monospace;  
 }
 
-main{
-    color: cadetblue;
+#root{
+    margin: 30px;
+}
+
+.logo__image{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+}
+
+.logo__name{
     font-size: 35px;
+    margin-right: 50%;
 }
 
-footer{
-    color: red;
-    font-size: 50px;
+.navbar{
+    display: inline-block;
+}
+
+.navbar__element{
+    display: inline-block;
+    margin-right: 10px;
 }

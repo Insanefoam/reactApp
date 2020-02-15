@@ -3,12 +3,13 @@ import React from "react"
 function Header(){
     return(
         <header>
-            <img src="https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg" width="45px" height="45px" alt="Logo"></img>
-            <nav>
-                <ul>
-                    <a href=""><li>link 1</li></a>
-                    <a href=""><li>link 2</li></a>
-                    <a href=""><li>link 3</li></a>
+            <img src="https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg" alt="Logo" class="logo__image"></img>
+            <span class="logo__name">Todo site</span>
+            <nav class="navbar">
+                <ul class="navbar__wraper">
+                    <li class="navbar__element"><a href="">Main</a></li>
+                    <li class="navbar__element"><a href="">About</a></li>
+                    <li class="navbar__element"><a href="">Log in</a></li>
                 </ul>
             </nav>
         </header>
