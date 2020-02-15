@@ -2,6 +2,11 @@
   font-family: 'Courier New', Courier, monospace;  
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
+
 #root{
     margin: 30px;
 }
@@ -23,5 +28,5 @@
 
 .navbar__element{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 25px;
 }
