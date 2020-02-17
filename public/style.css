@@ -1,5 +1,7 @@
-*{
-  font-family: 'Courier New', Courier, monospace;  
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #FCF7FF;  
 }
 
 a{
@@ -9,6 +11,7 @@ a{
 
 #root{
     margin: 30px;
+    color: #42273B;
 }
 
 .logo__image{

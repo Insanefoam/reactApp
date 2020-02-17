@@ -7,24 +7,24 @@ function MainContent(){
     if(hours < 6){
         timeOfDay = "morning";
     }else if(hours < 21){
-        timeOfDay = "day";
+        timeOfDay = "afternoon";
     }else{
         timeOfDay = "night";
     }
     
     const styles = {
-        color: "red"
+        fontSize : "20px"
     }
 
     return(
-        <main style = {styles}>
-            <div>Hello, user! Good {timeOfDay}. </div>
-            <span>Todo list:</span>
-            <ol>
-                <li>First todo <input type="checkbox"/></li>
-                <li>Second todo <input type="checkbox"/></li>
-                <li>Third todo <input type="checkbox"/></li>
-                <li>Fourth todo <input type="checkbox"/></li>
+        <main style = {styles} class="todolist">
+            <div class = "todolist__datetime">Hello, user! Good {timeOfDay}. </div>
+            <span class="todolist__intro">Todo list:</span>
+            <ol class="todolist__box">
+                <li class="todolist__element">First todo <input type="checkbox"/></li>
+                <li class="todolist__element">Second todo <input type="checkbox"/></li>
+                <li class="todolist__element">Third todo <input type="checkbox"/></li>
+                <li class="todolist__element">Fourth todo <input type="checkbox"/></li>
             </ol>
         </main>
     )
