@@ -11,8 +11,13 @@ function MainContent(){
     }else{
         timeOfDay = "night";
     }
+    
+    const styles = {
+        color: "red"
+    }
+
     return(
-        <main>
+        <main style = {styles}>
             <div>Hello, user! Good {timeOfDay}. </div>
             <span>Todo list:</span>
             <ol>
