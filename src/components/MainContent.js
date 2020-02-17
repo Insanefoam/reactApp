@@ -1,4 +1,5 @@
 import React from "react";
+import TodoItem from "./TodoItem"
 
 function MainContent(){
     let timeOfDay = null;
@@ -21,10 +22,10 @@ function MainContent(){
             <div class = "todolist__datetime">Hello, user! Good {timeOfDay}. </div>
             <span class="todolist__intro">Todo list:</span>
             <ol class="todolist__box">
-                <li class="todolist__element">First todo <input type="checkbox"/></li>
-                <li class="todolist__element">Second todo <input type="checkbox"/></li>
-                <li class="todolist__element">Third todo <input type="checkbox"/></li>
-                <li class="todolist__element">Fourth todo <input type="checkbox"/></li>
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
+                <TodoItem />
             </ol>
         </main>
     )
