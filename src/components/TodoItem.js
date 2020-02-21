@@ -1,9 +1,9 @@
 import React from "react"
 
-function TodoItem(){
+function TodoItem(props){
     return(
         <li class="todolist__element">
-            Todo text
+            {props.content.todoText}
             <input type="checkbox"/>
         </li>
     )

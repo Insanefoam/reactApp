@@ -22,10 +22,10 @@ function MainContent(){
             <div class = "todolist__datetime">Hello, user! Good {timeOfDay}. </div>
             <span class="todolist__intro">Todo list:</span>
             <ol class="todolist__box">
-                <TodoItem />
-                <TodoItem />
-                <TodoItem />
-                <TodoItem />
+                <TodoItem content={{todoText: "todoe1"}}/>
+                <TodoItem content={{todoText: "todoe2"}}/>
+                <TodoItem content={{todoText: "todoe3"}}/>
+                <TodoItem content={{todoText: "todoe4"}}/>
             </ol>
         </main>
     )
