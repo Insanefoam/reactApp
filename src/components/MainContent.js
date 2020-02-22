@@ -1,5 +1,6 @@
 import React from "react";
 import TodoItem from "./TodoItem"
+import todoes from "./todoes"
 
 function MainContent(){
     let timeOfDay = null;
@@ -17,15 +18,14 @@ function MainContent(){
         fontSize : "20px"
     }
 
+    const todoesComponents = todoes.map(todoe => <TodoItem content = {todoe}/>)
+
     return(
         <main style = {styles} class="todolist">
             <div class = "todolist__datetime">Hello, user! Good {timeOfDay}. </div>
             <span class="todolist__intro">Todo list:</span>
             <ol class="todolist__box">
-                <TodoItem content={{todoText: "todoe1"}}/>
-                <TodoItem content={{todoText: "todoe2"}}/>
-                <TodoItem content={{todoText: "todoe3"}}/>
-                <TodoItem content={{todoText: "todoe4"}}/>
+                {todoesComponents}
             </ol>
         </main>
     )
