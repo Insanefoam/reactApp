@@ -22,7 +22,7 @@ function MainContent(){
 
     return(
         <main style = {styles} class="todolist">
-            <div class = "todolist__datetime">Hello, user! Good {timeOfDay}. </div>
+            <div class="todolist__datetime">Hello, user! Good {timeOfDay}. </div>
             <span class="todolist__intro">Todo list:</span>
             <ol class="todolist__box">
                 {todoesComponents}
