@@ -1,9 +1,24 @@
 const todoes = [
-    {todoText : "todotext1"},
-    {todoText : "todotext2"},
-    {todoText : "todotext3"},
-    {todoText : "todotext4"},
-    {todoText : undefined}
+    {
+    todoText : "todotext1",
+    checkState : false
+    },
+    {
+    todoText : "todotext2",
+    checkState : true
+    },
+    {
+    todoText : "todotext3",
+    checkState : true
+    },
+    {
+    todoText : "todotext4",
+    checkState : false
+    },
+    {
+    todoText : undefined,
+    checkState : true
+    }
 ]
 
 export default todoes;

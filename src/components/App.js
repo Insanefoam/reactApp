@@ -16,7 +16,7 @@ class App extends React.Component{
         return(
             <div>
                 <Header />
-                <MainContent todoData = {this.state.jsonData}/>
+                <MainContent todoData={this.state.jsonData}/>
                 <Footer />
             </div>
         )

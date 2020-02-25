@@ -18,10 +18,10 @@ function MainContent(props){
     }
 
     let todoes = props.todoData;
-    const todoesComponents = todoes.map(todoe => <TodoItem content = {todoe}/>)
+    const todoesComponents = todoes.map(todoe => <TodoItem content={todoe}/>)
 
     return(
-        <main style = {styles} class="todolist">
+        <main style={styles} class="todolist">
             <div class="todolist__datetime">Hello, user! Good {timeOfDay}. </div>
             <span class="todolist__intro">Todo list:</span>
             <ol class="todolist__box">
