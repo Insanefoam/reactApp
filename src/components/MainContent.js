@@ -1,8 +1,7 @@
 import React from "react";
 import TodoItem from "./TodoItem"
-import todoes from "./todoes"
 
-function MainContent(){
+function MainContent(props){
     let timeOfDay = null;
     let date = new Date();
     let hours = date.getHours();
@@ -18,6 +17,7 @@ function MainContent(){
         fontSize : "20px"
     }
 
+    let todoes = props.todoData;
     const todoesComponents = todoes.map(todoe => <TodoItem content = {todoe}/>)
 
     return(

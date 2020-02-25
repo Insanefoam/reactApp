@@ -4,14 +4,15 @@ class Header extends React.Component{
     constructor(){
         super();
         this.state = {
-            logoText: "Todo site"
+            logoUrl: 'https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg',
+            logoText: 'Todo site'
         };
     }
 
     render() {
         return(
             <header>
-                <img src="https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg" alt="Logo" class="logo__image"></img>
+                <img src={this.state.logoUrl} alt="Logo" class="logo__image"></img>
                 <span class="logo__name"><a href="">{this.state.logoText}</a></span>
                 <nav class="navbar">
                     <ul class="navbar__wraper">
