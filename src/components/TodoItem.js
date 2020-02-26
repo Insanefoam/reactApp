@@ -5,26 +5,27 @@ class TodoItem extends React.Component{
         super();
         this.state = {
             todoText: props.content.todoText,
+            checkState: props.content.checkState,
             todoTextStyle: {
-                textDecoration: "none"
-            },
-            checkState: props.content.checkState
+                textDecoration: props.content.checkState ? 'line-through' : 'none'
+            }
         }
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick(){
-        //this.setState({todoText: "dwadwa", checkState: true});
         this.setState(prevState =>{
-            let newState = {
+            let style = (prevState.checkState ? 'none' : 'line-through');
+            let checkStatus = (prevState.checkState ? false : true);
+            prevState = {
                 todoText: prevState.todoText,
+                checkState: checkStatus,
                 todoTextStyle: {
-                    textDecoration: "line-through"
-                },
-                checkState: prevState.checkState
+                    textDecoration: style
+                }
             }
-            return newState;
-        })
+            return prevState;
+        });
     }
 
     render(){
@@ -33,7 +34,7 @@ class TodoItem extends React.Component{
                 <span style={this.state.todoTextStyle}>
                     {this.state.todoText ? this.state.todoText : "Empty todoe text"}
                 </span>
-                <input type="checkbox" checked={this.state.checkState} onClick={this.handleClick}/>
+                <input type="checkbox" defaultChecked={this.state.checkState} onClick={this.handleClick}/>
             </li>
         )
     }
