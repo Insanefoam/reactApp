@@ -5,7 +5,8 @@ class Header extends React.Component{
         super();
         this.state = {
             logoUrl: 'https://cdn.worldvectorlogo.com/logos/tiktok-logo.svg',
-            logoText: 'Todo site'
+            logoText: 'Todo site',
+            loginStatus: true
         };
     }
 
@@ -18,7 +19,7 @@ class Header extends React.Component{
                     <ul class="navbar__wraper">
                         <li class="navbar__element"><a href="">Main</a></li>
                         <li class="navbar__element"><a href="">About</a></li>
-                        <li class="navbar__element"><a href="">Log in</a></li>
+                        <li class="navbar__element"><a href="">{this.state.loginStatus ? "Log out" : "Log in"}</a></li>
                     </ul>
                 </nav>
             </header>

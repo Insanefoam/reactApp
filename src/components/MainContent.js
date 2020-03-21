@@ -3,8 +3,8 @@ import TodoItem from "./TodoItem"
 
 function MainContent(props){
     let timeOfDay = null;
-    let date = new Date();
-    let hours = date.getHours();
+    let hours = new Date().getHours();
+    
     if(hours < 6){
         timeOfDay = "morning";
     }else if(hours < 21){

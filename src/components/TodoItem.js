@@ -6,7 +6,8 @@ class TodoItem extends React.Component{
         this.state = {
             todoText: props.content.todoText,
             checkState: props.content.checkState,
-            todoTextStyle: {
+            todoTextStyle: 
+            {
                 textDecoration: props.content.checkState ? 'line-through' : 'none'
             }
         }
@@ -15,8 +16,8 @@ class TodoItem extends React.Component{
 
     handleClick(){
         this.setState(prevState =>{
-            let style = (prevState.checkState ? 'none' : 'line-through');
-            let checkStatus = (prevState.checkState ? false : true);
+            let style = prevState.checkState ? 'none' : 'line-through';
+            let checkStatus = ! prevState.checkState;
             prevState = {
                 todoText: prevState.todoText,
                 checkState: checkStatus,
@@ -28,11 +29,19 @@ class TodoItem extends React.Component{
         });
     }
 
+    // componentDidMount(){
+    //     setTimeout(() => {
+    //         this.setState({
+    //             todoText: "Loading..."
+    //         })
+    //     }, 1000);
+    // }
+
     render(){
             return(
             <li class="todolist__element">
                 <span style={this.state.todoTextStyle}>
-                    {this.state.todoText ? this.state.todoText : "Empty todoe text"}
+                    {this.state.todoText || "Empty todoe text"}
                 </span>
                 <input type="checkbox" defaultChecked={this.state.checkState} onClick={this.handleClick}/>
             </li>

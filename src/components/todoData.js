@@ -1,18 +1,19 @@
-const todoes = [
+const todoes = 
+[
     {
-    todoText : "todotext1",
+    todoText : "Никогда не кидать",
     checkState : false
     },
     {
-    todoText : "todotext2",
+    todoText : "Говорить только да",
     checkState : true
     },
     {
-    todoText : "todotext3",
+    todoText : "Иногда голодать",
     checkState : true
     },
     {
-    todoText : "todotext4",
+    todoText : "Иногда пропадать",
     checkState : false
     },
     {
